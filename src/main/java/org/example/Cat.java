@@ -36,15 +36,15 @@ public class Cat {
         }
         this.weight = weight;
     }
-    /*public String toString() {
+    public String toString() {
         return "Cat { "
                 + "Cat name=\"" + getName() + "\""
                 + ", weight=" + getWeight()
                 + ", isAngry=" + isAngry()
                 + " }";
-    } */
-    public boolean isAngry() {
-        return isAngry;
+    }
+    public String isAngry() {
+        return isAngry ? "IsAngry" : "affectionate cat";
     }
 
     public void setAngry(boolean angry) {
