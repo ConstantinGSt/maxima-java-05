@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text-block {
+    background-color: rgb(45, 165, 91);
+    display: block;
+    width: 200px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.text-block:hover {
+    background-color: red;
+}
+
+div {
+    border-style: dashed;
+    border-color: blue;
+    width: 1000px;
+    height: 145px;
+    background-color: red;
+  }
+#h1 {
+   color: yellow; 
+}
