@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Данные кота</title>
+</head>
+
+<body>
+    <center>
+        <div class="block">
+            <h2  id="h1">Троецветие вырвиглаз</h2>
+            <b> Репозиторий maxima-java-05
+                <p> >Создать шаблон страницы с использованием тегов div, p, a, img
+                    Использовать на странице не менее трех классов,
+                    подключенных к типу элемента, к id элемента и через явное указание класса. </p>
+
+                <br> <i> >Описать класс DynamicPage с методом createPage(String filename),
+                     который будет создавать html-файл по шаблону Freemarker, используя данные из вспомогательного
+                         класса. 
+                        В качестве такого класса данных использовать класс Cat из модуля 3.</i>
+            </b>
+        </div>
+        <article>
+            <p><span class="text-block">Первый обзац готов</span></p>
+        </article>
+       <br> <h1><p> Котика не было</p> </h1> 
+        <p><a href="https://www.b17.ru/foto/uploaded/upl_1509740711_33648.png" alt="некотэ">ссылька</a></p>
+
+        <div>
+            <h2>Пушок</h2>
+            <h2>FreeMarker template error (DEBUG mode; use RETHROW in production!):
+For "${...}" content: Expected a string or something automatically convertible to string (number, date or boolean), or "template output" , but this has evaluated to a method+sequence (wrapper: f.e.b.SimpleMethodModel):
+==> cat1.getWeight  [in template "index.html" at line 35, column 19]
+
+----
+Tip: Maybe using obj.something instead of obj.getSomething will yield the desired value.
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${cat1.getWeight}  [in template "index.html" at line 35, column 17]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.NonStringOrTemplateOutputException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.EvalUtil.coerceModelToTextualCommon(EvalUtil.java:525)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:401)
+	at freemarker.core.EvalUtil.coerceModelToStringOrMarkup(EvalUtil.java:370)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:347)
+	at freemarker.core.Environment.visit(Environment.java:353)
+	at freemarker.core.Environment.process(Environment.java:326)
+	at freemarker.template.Template.process(Template.java:383)
+	at org.example.App.main(App.java:34)

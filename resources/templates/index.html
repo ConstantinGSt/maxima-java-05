@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>DZ FreeMarker</title>
+    <title>${title}</title>
 </head>
 
 <body>
@@ -29,6 +29,12 @@
         </article>
        <br> <h1><p> Котика не было</p> </h1> 
         <p><a href="https://www.b17.ru/foto/uploaded/upl_1509740711_33648.png" alt="некотэ">ссылька</a></p>
+
+        <div>
+            <h2>${cat1.getName()}</h2>
+            <h2>${cat1.getWeight}</h2>
+            <h1 class="h1">${cat1.isAngry()}</h1>
+        </div>
         
         <script src="scrypt.js"></script>
 </body>
