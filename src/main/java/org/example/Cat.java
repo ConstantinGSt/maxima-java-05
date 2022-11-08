@@ -50,4 +50,8 @@ public class Cat {
     public void setAngry(boolean angry) {
         this.isAngry = angry;
     }
+
+    public void createPage(String s) {
+
+    }
 }
