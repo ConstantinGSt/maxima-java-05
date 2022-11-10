@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.Cat;
 import freemarker.template.*;
 
 import java.io.File;
@@ -20,7 +19,7 @@ public class DynamicPage {
         Configuration conf = new Configuration(Configuration.VERSION_2_3_31);
         conf.setDirectoryForTemplateLoading(new File(resourcesPath));
         conf.setDefaultEncoding("UTF-8");
-        
+
         Cat cat = new Cat("Васька", 12);
         Map root = new HashMap<>();
 
